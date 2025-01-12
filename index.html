@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link ke file CSS -->
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="instiki3.jpeg" style="width:100%">
+            <div class="text"></div>
+        </div>
+        <div class="mySlides fade">
+            <img src="foto1.jpeg" style="width:100%">
+            <div class="text"></div>
+        </div>
+        <div class="mySlides fade">
+            <img src="keluargaku.jpeg" style="width:100%">
+            <div class="text"></div>
+        </div>
+    </div>
+
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar dengan tombol navigasi -->
+        <div class="sidebar">
+            <header>
+                <button class="home-btn home-btn-home" onclick="goHome()">Home</button>
+            </header>
+            <header>
+                <button class="home-btn home-btn-education" onclick="goEducation()">Education</button>
+            </header>
+            <header>
+                <button class="home-btn home-btn-family" onclick="goFamily()">Family</button>
+            </header>
+            <header>
+                <button class="home-btn home-btn-about" onclick="goAbout()">About</button>
+            </header>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <p id="message">Welcome to my web!</p>
+            <div class="main-content" id="main-contents" style="display: none;">
+                <img src="welcome.jpeg" alt="Welcome">
+            </div>
+
+            <div class="family-images" id="family-images" style="display: none;">
+                <img src="gweh.jpeg" alt="Family 1">
+                <img src="adik.jpeg" alt="Family 2">
+                <img src="bapak.jpeg" alt="Family 3">
+                <img src="mamak.jpeg" alt="Family 4">
+            </div>
+
+            <div class="about-images" id="about-images" style="display: none;">
+                <img src="agus1 (1).jpeg" alt="About">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link ke file JavaScript -->
+</body>
+</html>

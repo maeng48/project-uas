@@ -1,0 +1,166 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+.slideshow-container {
+    max-width: 1100px;
+    position: relative;
+    margin: auto;
+}
+.text {
+    color: #f2f2f2;
+    font-size: 40px;
+    padding: 8px 15px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 40px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display:none;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {font-size: 11px}
+}
+
+/* General Styling */
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    max-width: 900px;
+    margin: auto;
+}        
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+}        
+.sidebar header {
+    margin-bottom: 20px;
+}
+
+.home-btn {
+    padding: 35px 40px;
+    margin: 5px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.home-btn:hover {
+    transform: scale(1.1);
+    background-color: #1976D2;
+}
+
+.home-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.home-btn-family, .home-btn-about, .home-btn-education, .home-btn-home {
+    background-color: #4CAF50;
+}
+
+/* Main Content */
+.main-content {
+    flex: 2;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.main-content p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Gambar Family dan About */
+.family-images, .about-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.family-images img, .about-images img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.family-images img:hover, .about-images img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling untuk Pesan */
+#message {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+}
