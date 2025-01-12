@@ -46,9 +46,10 @@ function goEducation() {
         '<span style="font-size: 20px;">Pendidikan saya dimulai di TK Singasari 1</span><br>' + 
         '<span style="font-size: 20px;">Setelah itu, saya melanjutkan ke SD N 2 Blahkiuh.</span><br>' +
         '<span style="font-size: 20px;">Setelah itu, saya melanjutkan ke SMP N 1 Abiansemal.</span><br>' + 
-        '<span style="font-size: 20px;">Setelah itu, saya melanjutkan ke SMA N 1 Abiansemal.</span>'; 
-    document.getElementById("family-images").style.display = "none"; 
-    document.getElementById("about-images").style.display = "none";
+        '<span style="font-size: 20px;">Setelah itu, saya melanjutkan ke SMA N 1 Abiansemal.</span><br>' +
+        '<span style="font-size: 20px;">Saat ini, saya kuliah di INSTIKI.</span>';
+        document.getElementById("family-images").style.display = "none"; 
+        document.getElementById("about-images").style.display = "none";
 }
 
 function goFamily() {
